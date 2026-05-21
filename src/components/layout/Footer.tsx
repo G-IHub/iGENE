@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="w-10 h-10 rounded-full border border-purple-100 p-0.5 flex items-center justify-center overflow-hidden shrink-0">
               <img src={logoImg} className="w-full h-full object-cover rounded-full" alt="Overlay Logo" />
             </div>
-            <span className="text-xl font-extrabold tracking-tight text-slate-900 font-sans">Overlay</span>
+            <span className="text-xl font-extrabold tracking-tight text-slate-900 font-sans">iGENE</span>
           </a>
           <p className="text-slate-500 text-sm max-w-sm font-normal">
             Genomac Labs uses clinical-grade precision genetic sequencing paired with medical-grade intelligence models to empower you on your health journey.
