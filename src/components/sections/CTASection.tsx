@@ -31,12 +31,14 @@ export const CTASection: React.FC = () => {
               Book a consultation with our team today. We'll explain exactly what genetic testing means for you, which services fit your situation, and what your next step should be — in plain language, no pressure.
             </p>
 
-            <button className="group flex h-14 items-center gap-3 rounded-full bg-white pl-8 pr-2 font-medium text-[#972FAF] transition-all hover:scale-105 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-white/20">
+            <a href="https://app.zikorail.com/go/genomac-labs-genetic-test" target='_blank'>
+              <button className="group flex h-14 items-center gap-3 rounded-full bg-white pl-8 pr-2 font-medium text-[#972FAF] transition-all hover:scale-105 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-white/20">
               <span className="text-[16px] pr-2">Book a consultation</span>
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#EAECEE] transition-colors group-hover:bg-[#E5E7EB]">
                 <Play className="ml-0.5 h-4 w-4 fill-gray-400 text-gray-400" />
               </div>
             </button>
+            </a>
             
           </div>
         </div>

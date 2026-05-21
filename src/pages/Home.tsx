@@ -4,8 +4,8 @@ import HowItWorks from "../components/sections/HowItWorks";
 import PrivacySection from "../components/sections/PrivacySection";
 import ServicesSection from "../components/sections/ServicesSection";
 import ValuePropositionSection from "../components/sections/ValuePropositionSection";
-import Testimonial from "../components/sections/Testimonial";
-import FAQ from "../components/sections/FAQ";
+import { Testimonial } from "../components/sections/Testimonial";
+import { FAQ } from "../components/sections/FAQ";
 import CTASection from "../components/sections/CTASection";
 
 export default function Home() {
@@ -30,8 +30,8 @@ export default function Home() {
             risks, and genetic conditions through Genomac Labs.
           </p>
           
-          <a href='https://app.zikorail.com/go/genomac-labs-genetic-test' className="group flex items-center gap-1 rounded-full bg-[#972FAF] px-8 py-4 text-[17px] font-medium text-white transition-all hover:scale-105 hover:bg-[#832698] shadow-lg shadow-purple-900/20">
-            <span>Chat with iGeng</span>
+          <a href='https://app.zikorail.com/go/genomac-labs-genetic-test' target='_blank' className="group flex items-center gap-1 rounded-full bg-[#972FAF] px-8 py-4 text-[17px] font-medium text-white transition-all hover:scale-105 hover:bg-[#832698] shadow-lg shadow-purple-900/20">
+            <span>Chat with iGENE</span>
             <ChevronsRight className="ml-1 h-5 w-5 transition-transform group-hover:translate-x-1" />
           </a>
         </div>

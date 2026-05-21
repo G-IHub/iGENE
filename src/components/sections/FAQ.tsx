@@ -141,10 +141,12 @@ export const FAQ: React.FC = () => {
                 Can't find the answer you're looking for? Please chat to our friendly team.
               </p>
               
-              <button className="bg-[#6B71F2] hover:bg-[#5A5EE0] text-white text-sm font-medium py-3 px-6 rounded-lg w-max flex items-center gap-2 transition-colors duration-200">
+              <a href="https://app.zikorail.com/go/genomac-labs-genetic-test" target='_blank'>
+                <button className="bg-[#6B71F2] hover:bg-[#5A5EE0] text-white text-sm font-medium py-3 px-6 rounded-lg w-max flex items-center gap-2 transition-colors duration-200">
                 Get in touch
                 <Play className="w-3 h-3 fill-current" />
               </button>
+              </a>
             </div>
           </div>
 
