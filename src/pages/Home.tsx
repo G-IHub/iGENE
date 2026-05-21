@@ -48,6 +48,12 @@ export default function Home() {
           {/* <div className="absolute inset-0 bg-gradient-to-r from-[#FAFAFA] via-[#FAFAFA]/60 to-transparent z-10"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#FAFAFA] via-transparent to-transparent z-10"></div> */}
         </div>
+
+        <div className="block md:hidden absolute -bottom-40 left-0 w-full h-[600px] overflow-hidden pointer-events-none" >
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#FAFAFA] via-transparent to-transparent z-10">
+              <img src={heroImg} alt="" className='w-full h-full object-cover' />
+            </div>
+        </div>
       </div>
     </section>
     

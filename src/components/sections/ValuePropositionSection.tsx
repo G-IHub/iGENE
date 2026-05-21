@@ -45,14 +45,14 @@ export const ValuePropositionSection: React.FC = () => {
             <span className="block text-xs font-semibold uppercase tracking-wider text-[#4A55E7] mb-6">
               // Your Privacy //
             </span>
-            <h2 className="text-4xl font-medium tracking-tight text-[#1A1A1A] sm:text-5xl lg:text-6xl">
-              Your genetic data is yours. Always.
+            <h2 className="text-3xl font-medium tracking-tight text-[#1A1A1A] sm:text-4xl lg:text-5xl">
+              THE BIGGER VISION Making Precision Medicine More Accessible in Africa
             </h2>
           </div>
           
           <div className="max-w-md lg:mt-12">
             <p className="text-base leading-relaxed text-[#666666]">
-              Genetic information is among the most personal data that exists. We treat it that way. Your data is used only to provide your results and care plan — never sold, never shared, never used without your knowledge.
+              Genetic testing and precision medicine should not only exist in advanced countries. At Genomac Labs, we are building systems that help more Africans access:
             </p>
           </div>
         </div>
