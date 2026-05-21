@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
-import image from '../../assets/image.svg';
+import image from "../../assets/image.svg";
 // This is caused a build error, npm run build worked well, but prod failed - apparently the actaully image 
 // was Image.svg not image.svg as referenced here - capital "I"!!! Imagine??????! I added this to be able to commit sha
 import image1 from '../../assets/image1.svg';
