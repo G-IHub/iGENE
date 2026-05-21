@@ -32,10 +32,10 @@ export const Navbar: React.FC = () => {
         </div>
 
         {/* CTA Button */}
-        <button className="group flex items-center gap-1 rounded-full bg-[#972FAF] px-6 py-3 font-medium text-white transition-transform hover:scale-105 hover:bg-[#832698]">
+        <a href="https://app.zikorail.com/go/genomac-labs-genetic-test" className="group flex items-center gap-1 rounded-full bg-[#972FAF] px-6 py-3 font-medium text-white transition-transform hover:scale-105 hover:bg-[#832698]">
           <span>Chat with iGeng</span>
           <ChevronsRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-        </button>
+        </a>
       </div>
     </nav>
   );

@@ -101,11 +101,11 @@ export const HowItWorks: React.FC = () => {
           </div>
 
           {/* Right Column: Image Presentation */}
-          <div className="relative flex w-full items-center justify-center rounded-[32px] bg-[#F4F4F4] aspect-square md:aspect-[4/3] lg:aspect-square overflow-hidden">
+          <div className="relative flex w-full items-center justify-center rounded-4xl bg-[#F4F4F4] aspect-square md:aspect-4/3 lg:aspect-square overflow-hidden">
             <img
               src={phone}
               alt="Mobile app interface displaying currency conversion amidst 3D crystal structures"
-              className="w-full h-full object-contain object-center"
+              className="w-full h-full object-cover lg:object-contain object-center"
             />
           </div>
         </div>
