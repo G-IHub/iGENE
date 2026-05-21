@@ -1,6 +1,6 @@
 import React from "react";
 import { MessageSquareText, Target, Quote, Headset } from "lucide-react";
-import phone from "../../assets/phone.svg";
+import phone from "../../assets/phone.jpeg";
 
 interface FeatureProps {
   icon: React.ReactNode;
