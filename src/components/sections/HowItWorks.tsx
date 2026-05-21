@@ -1,4 +1,4 @@
-import phoneImg from '../../assets/phone.jpg'
+import phoneImg from '../../assets/phone.svg'
 
 export default function HowItWorks() {
   const features = [
@@ -76,13 +76,11 @@ export default function HowItWorks() {
 
         {/* Right Column - Image Card */}
         <div className="flex justify-center lg:justify-end w-full">
-          <div className="bg-[#F4F4F6] rounded-[32px] p-8 lg:p-12 w-full aspect-[4/4] lg:aspect-[4/4.2] flex items-center justify-center overflow-hidden">
-            <img 
+          <img 
               src={phoneImg} 
               alt="Phone App Demonstration" 
-              className="w-full h-full object-contain mix-blend-multiply"
+              className="w-full h-full object-contain"
             />
-          </div>
         </div>
 
       </div>
