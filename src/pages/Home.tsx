@@ -11,13 +11,13 @@ import CTASection from "../components/sections/CTASection";
 export default function Home() {
   return (
     <>
-    <section className="relative min-h-screen w-full overflow-hidden bg-[#FAFAFA] pt-32 pb-20 lg:pt-0">
+    <section className="relative min-h-screen w-full overflow-hidden bg-[#FAFAFA] pt-32 pb-20">
       
       {/* Main Container */}
       <div className="mx-auto flex min-h-screen max-w-7xl flex-col lg:flex-row lg:items-center px-6 md:px-12 lg:px-8">
         
         {/* Left Content (Text & CTA) */}
-        <div className="relative z-10 w-full lg:w-[55%] flex flex-col items-start pt-12 lg:pt-0">
+        <div className="relative z-10 w-full lg:w-[55%] flex flex-col items-start pt-12 lg:pt-24">
           <h1 className="mb-6 text-4xl font-medium tracking-tight text-[#1A1A1A] sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
             Precision Genetic Testing <br className="hidden lg:block" />
             & AI-Powered Health <br className="hidden lg:block" />
