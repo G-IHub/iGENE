@@ -49,7 +49,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#FAFAFA] via-transparent to-transparent z-10"></div> */}
         </div>
 
-        <div className="block md:hidden absolute -bottom-40 left-0 w-full h-[600px] overflow-hidden pointer-events-none" >
+        <div className="block md:hidden absolute -bottom-60 left-0 w-full h-[600px] overflow-hidden pointer-events-none" >
             <div className="absolute inset-0 bg-gradient-to-tr from-[#FAFAFA] via-transparent to-transparent z-10">
               <img src={heroImg} alt="" className='w-full h-full object-cover' />
             </div>
@@ -59,12 +59,12 @@ export default function Home() {
     
     {/* How It Works Section */}
     <HowItWorks />
-    {/* Privacy Section */}
-    <PrivacySection />
-    {/* Services Section */}
-    <ServicesSection />
     {/* Value Proposition Section */}
     <ValuePropositionSection />
+    {/* Services Section */}
+    <ServicesSection />
+    {/* Privacy Section */}
+    <PrivacySection />
     {/* Testimonial Section */}
     <Testimonial />
     {/* FAQ Section */}

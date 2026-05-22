@@ -42,11 +42,11 @@ export const ValuePropositionSection: React.FC = () => {
         {/* Top Header Split Section */}
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-16 gap-8 lg:gap-16">
           <div className="max-w-2xl">
-            <span className="block text-xs font-semibold uppercase tracking-wider text-[#4A55E7] mb-6">
-              // Your Privacy //
+            <span className="block text-xl font-semibold uppercase tracking-wider text-[#4A55E7] mb-6">
+              // THE BIGGER VISION //
             </span>
             <h2 className="text-3xl font-medium tracking-tight text-[#1A1A1A] sm:text-4xl lg:text-5xl">
-              THE BIGGER VISION Making Precision Medicine More Accessible in Africa
+              Making Precision Medicine More Accessible in Africa
             </h2>
           </div>
           

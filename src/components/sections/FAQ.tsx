@@ -116,11 +116,11 @@ export const FAQ: React.FC = () => {
           </div>
 
           {/* Top Right: Description */}
-          <div className="lg:col-span-7 flex lg:items-end">
+          {/* <div className="lg:col-span-7 flex lg:items-end">
             <p className="text-[#666666] text-lg lg:pb-2 max-w-lg">
               Everything you need to know about Zikorail, pricing, and how to get started.
             </p>
-          </div>
+          </div> */}
 
           {/* Bottom Left: CTA Card */}
           <div className="lg:col-span-5">
