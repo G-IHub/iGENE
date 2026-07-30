@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import phoneMockup from "../assets/iphone.svg";
+import phonemockup from "../assets/iPhone.svg";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -190,7 +190,7 @@ const HowItWorks = () => {
 
             {/* Right Side: Visual/Mockup Placeholder */}
             <div className="relative flex justify-center items-center h-full">
-              <img src={phoneMockup} alt="Phone Mockup" />
+              <img src={phonemockup} alt="Phone Mockup" />
             </div>
           </div>
         ))}
