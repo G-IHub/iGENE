@@ -14,7 +14,7 @@ const Navbar = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
               </svg>
             </div>
-            <span className="font-semibold text-gray-800 tracking-wide text-sm md:text-base">iGENE</span>
+            <span className="font-semibold text-gray-800 tracking-wide text-sm md:text-base font-[sanchez]">iGENE</span>
           </div>
 
           {/* Desktop Links */}
@@ -25,12 +25,12 @@ const Navbar = () => {
             <a href="#" className="hover:text-gray-900 transition-colors">Company</a>
           </div>
           <div className="hidden md:block">
-            <button className="bg-[#B241B7] hover:bg-[#a03cb1] cursor-pointer text-white px-5 py-2 rounded-full text-sm font-medium flex items-center gap-2 transition-colors">
+            <a href="https://app.zikorail.com/go/genomac-labs-genetic-test" target='_blank' className="bg-[#B241B7] hover:bg-[#a03cb1] cursor-pointer text-white px-5 py-2 rounded-full text-sm font-medium flex items-center gap-2 transition-colors">
               Contact Us
               <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M24 12l-9-8v6H0v4h15v6z" />
               </svg>
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -55,7 +55,7 @@ const Navbar = () => {
             <a href="#" className="text-sm font-medium text-gray-600 hover:text-gray-900 px-2">Pricing</a>
             <a href="#" className="text-sm font-medium text-gray-600 hover:text-gray-900 px-2">Resources</a>
             <a href="#" className="text-sm font-medium text-gray-600 hover:text-gray-900 px-2">Company</a>
-            <a href="" className="bg-[#B241B7] hover:bg-[#a03cb1] text-white px-5 py-2 mt-2 rounded-full text-sm font-medium flex items-center justify-center gap-2 transition-colors w-full">
+            <a href="https://app.zikorail.com/go/genomac-labs-genetic-test" target="_blank" className="bg-[#B241B7] hover:bg-[#a03cb1] text-white px-5 py-2 mt-2 rounded-full text-sm font-medium flex items-center justify-center gap-2 transition-colors w-full">
               Contact Us
               <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M24 12l-9-8v6H0v4h15v6z" />

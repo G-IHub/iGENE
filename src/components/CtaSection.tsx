@@ -16,9 +16,9 @@ const CtaSection = () => {
           no jargon. Just you, your concern, and an AI that knows how to connect
           it to the answers your body has been waiting for.
         </p>
-        <button className="bg-[#B241B7] cursor-pointer hover:bg-[#a03cb1] text-white font-medium text-sm px-4 py-3 rounded-full transition-colors duration-300 shadow-sm">
+        <a href="https://app.zikorail.com/go/genomac-labs-genetic-test" target="_blank" className="bg-[#B241B7] cursor-pointer hover:bg-[#a03cb1] text-white font-medium text-sm px-4 py-3 rounded-full transition-colors duration-300 shadow-sm">
           Get started with iGENE
-        </button>
+        </a>
       </div>
     </section>
   );
