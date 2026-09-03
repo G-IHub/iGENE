@@ -200,7 +200,7 @@ const HowItWorks = () => {
             </div>
 
             {/* Right Side: Visual/Mockup Placeholder */}
-            <div className="relative flex justify-center items-center h-full">
+            <div className="hidden relative md:flex justify-center items-center h-full">
               <img src={step.image} alt={`${step.title} phone mockup`} />
             </div>
           </div>
