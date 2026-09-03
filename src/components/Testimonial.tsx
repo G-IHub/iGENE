@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 const Testimonial = () => {
   return (
     <section className="relative w-full bg-[#FEF2FF] py-25 px-6 md:px-12 lg:px-20 overflow-hidden">
-      <div className="absolute -bottom-80 left-10 blur-3xl w-[500px] h-[500px] bg-radial from-[#B241B7] to-[#FFFFFF00] rounded-full pointer-events-none"></div>
+      <div className="absolute -bottom-80 left-10 blur-3xl w-125 h-125 bg-radial from-[#B241B7] to-[#FFFFFF00] rounded-full pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
@@ -35,7 +35,7 @@ const Testimonial = () => {
               </div>
               <h4 className="text-white font-semibold text-sm mb-1">Olatunbosun Oyediran</h4>
               <div className="flex items-center gap-2 text-gray-400 text-xs">
-                <img src={appstore} alt="App Store" className="w-[14px] h-[14px] fill-current" />
+                <img src={appstore} alt="App Store" className="w-3.5 h-3.5 fill-current" />
                 <span>AppStore User</span>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Testimonial = () => {
               </div>
               <h4 className="text-white font-semibold text-sm mb-1">Salvation Ogudu</h4>
               <div className="flex items-center gap-2 text-gray-400 text-xs">
-                <svg viewBox="0 0 24 24" aria-hidden="true" className="w-[14px] h-[14px] fill-current">
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="w-3.5 h-3.5 fill-current">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.008 5.976H5.078z"></path>
                 </svg>
                 <span>X User</span>
@@ -83,7 +83,7 @@ const Testimonial = () => {
               </div>
               <h4 className="text-white font-semibold text-sm mb-1">Michael Anokwu</h4>
               <div className="flex items-center gap-2 text-gray-400 text-xs">
-                <img src={playstore} alt="Play Store" className="w-[14px] h-[14px] fill-current" />
+                <img src={playstore} alt="Play Store" className="w-3.5 h-3.5 fill-current" />
                 <span>PlayStore User</span>
               </div>
             </div>

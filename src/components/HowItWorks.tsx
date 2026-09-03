@@ -148,7 +148,7 @@ const HowItWorks = () => {
       <div className="w-full px-6 pt-24 mb-16 relative z-10">
         <div className="text-center max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-8 h-[1px] bg-purple-700"></div>
+            <div className="w-8 h-px bg-purple-700"></div>
             <span className="text-purple-700 font-semibold text-xs tracking-widest uppercase">
               HOW IT WORKS
             </span>
@@ -168,7 +168,7 @@ const HowItWorks = () => {
       {/* The Pinning Card Container */}
       <div
         ref={cardContainerRef}
-        className="relative w-full max-w-[1100px] mx-auto px-6 h-[420px]"
+        className="relative w-full max-w-275 mx-auto px-6 h-105"
       >
         {steps.map((step, index) => (
           <div
@@ -180,7 +180,7 @@ const HowItWorks = () => {
               index === 0
                 ? "relative"
                 : "absolute top-0 left-6 right-6 w-[calc(100%-3rem)]"
-            } rounded-[32px] p-8 md:p-14 shadow-lg border border-black/5 grid grid-cols-1 md:grid-cols-2 gap-12 items-center will-change-transform origin-top h-full`}
+            } rounded-4xl p-8 md:p-14 shadow-lg border border-black/5 grid grid-cols-1 md:grid-cols-2 gap-12 items-center will-change-transform origin-top h-full`}
             style={{
               backgroundColor: step.bgColor,
               zIndex: index + 10,
