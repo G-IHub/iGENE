@@ -19,9 +19,9 @@ const Hero = () => {
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-gray-900  mx-auto leading-tight mb-4 md:mb-6 px-2">
           Whatever health concern is
           <br className="hidden sm:block" /> keeping you up at night
-          <br className="sm:block" />
+          <br className="hidden sm:block" />
           <span className="text-[#767676] font-medium">
-             iGENE has the answers.
+            iGENE has the answers.
           </span>
         </h1>
         <p className="text-[#5A5A5A] max-w-3xl mx-auto text-sm sm:text-base md:text-lg mb-8 md:mb-10 leading-relaxed px-4">

@@ -4,7 +4,12 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import phonemockup from "../assets/iPhone.svg";
+import phoneMockup1 from "../assets/iPhone.svg";
+import phoneMockup2 from "../assets/iPhone1.svg";
+import phoneMockup3 from "../assets/iPhone2.svg";
+import phoneMockup4 from "../assets/iPhone3.svg";
+import phoneMockup5 from "../assets/iPhone4.svg";
+import phoneMockup6 from "../assets/iPhone5.svg";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -19,6 +24,7 @@ const steps = [
       "Message iGENE on WhatsApp. Tell it what is on your mind about your health. The AI listens, asks intelligent questions, and understands your concern in 10–15 minutes.",
     tag: "FREE . WHATSAPP . 15MIN",
     bgColor: "#f8f5ff",
+    image: phoneMockup1,
   },
   {
     id: 2,
@@ -27,6 +33,7 @@ const steps = [
       "iGENE connects your concern to the right genetic assessment — explaining what it tests, why it matters for you specifically, and what you will know after.",
     tag: "Personalised · Plain language",
     bgColor: "#f0f7ff",
+    image: phoneMockup2,
   },
   {
     id: 3,
@@ -35,6 +42,7 @@ const steps = [
       "Our mobile phlebotomist visits you or you visit our nearest partner hospital close to you. Your sample is collected, labelled, and dispatched to the lab.",
     tag: "Home · Office · Lab",
     bgColor: "#fff5f5",
+    image: phoneMockup3,
   },
   {
     id: 4,
@@ -43,6 +51,7 @@ const steps = [
       "Six WhatsApp updates from the moment your sample leaves your hands to the moment your results are ready. You always know exactly where it is.",
     tag: "6 real-time updates",
     bgColor: "#eff0ff",
+    image: phoneMockup4,
   },
   {
     id: 5,
@@ -51,6 +60,7 @@ const steps = [
       "A 45–60 minute call with a precision medicine consultant. What was found. What it means for you. What to do next. No confusing clinical language.",
     tag: "Expert consultation",
     bgColor: "#ebfbfb",
+    image: phoneMockup5,
   },
   {
     id: 6,
@@ -59,6 +69,7 @@ const steps = [
       "A written plain-language report and 12-month monitoring plan — sent within 24 hours of your results call. Share it with your doctor. Keep it for life.",
     tag: "Written report · 12-month plan",
     bgColor: "#fdf2f8",
+    image: phoneMockup6,
   },
 ];
 
@@ -82,7 +93,7 @@ const HowItWorks = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: cardContainerRef.current, // Target the cards directly, not the whole section
-          start: "top 12%", // Let it scroll up until it sits nicely near the top of the viewport
+          start: "top 20%", // Let it scroll up until it sits nicely near the top of the viewport
           end: `+=${cards.length * 150}%`, // Longer scroll distance for maximum smoothness
           pin: true,
           scrub: 1, // Fluid follow-through effect on the scrollbar
@@ -157,7 +168,7 @@ const HowItWorks = () => {
       {/* The Pinning Card Container */}
       <div
         ref={cardContainerRef}
-        className="relative w-full max-w-[1000px] mx-auto px-6 h-[500px]"
+        className="relative w-full max-w-[1100px] mx-auto px-6 h-[420px]"
       >
         {steps.map((step, index) => (
           <div
@@ -190,7 +201,7 @@ const HowItWorks = () => {
 
             {/* Right Side: Visual/Mockup Placeholder */}
             <div className="relative flex justify-center items-center h-full">
-              <img src={phonemockup} alt="Phone Mockup" />
+              <img src={step.image} alt={`${step.title} phone mockup`} />
             </div>
           </div>
         ))}
