@@ -25,41 +25,42 @@ const Footer = () => {
           </svg>
         </div>
         <span className="text-white font-semibold text-lg tracking-wide">
-          IGENE
+          iGENE
         </span>
       </div>
 
       {/* Footer Links */}
       <nav className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-6 md:gap-8 px-4">
         <a
-          href="#"
+          href="#what-is-igene"
           className="text-[#d1d0d5] hover:text-white font-medium text-[15px] transition-colors"
         >
-          Overview
+          What is iGENE
         </a>
         <a
-          href="#"
+          href="#how-it-works"
           className="text-[#d1d0d5] hover:text-white font-medium text-[15px] transition-colors"
         >
-          Teams
+          How it works
         </a>
         <a
-          href="#"
+          href="#stories"
           className="text-[#d1d0d5] hover:text-white font-medium text-[15px] transition-colors"
         >
-          Jobs
+          Patient stories
         </a>
         <a
-          href="#"
+          href="#faq"
           className="text-[#d1d0d5] hover:text-white font-medium text-[15px] transition-colors"
         >
-          Help
+          FAQ
         </a>
         <a
-          href="#"
+          href="https://app.zikorail.com/go/genomac-labs-genetic-test"
+          target="_blank"
           className="text-[#d1d0d5] hover:text-white font-medium text-[15px] transition-colors"
         >
-          Privacy
+          Chat on WhatsApp
         </a>
       </nav>
 

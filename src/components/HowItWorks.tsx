@@ -22,7 +22,7 @@ const steps = [
     title: "Start a free chat",
     description:
       "Message iGENE on WhatsApp. Tell it what is on your mind about your health. The AI listens, asks intelligent questions, and understands your concern in 10–15 minutes.",
-    tag: "FREE . WHATSAPP . 15MIN",
+    tag: "Free · WhatsApp · 15 min",
     bgColor: "#f8f5ff",
     image: phoneMockup1,
   },
@@ -39,7 +39,7 @@ const steps = [
     id: 3,
     title: "Sample collected at home",
     description:
-      "Our mobile phlebotomist visits you or you visit our nearest partner hospital close to you. Your sample is collected, labelled, and dispatched to the lab.",
+      "A mobile phlebotomist comes to you, or you visit a partner hospital near you. Your sample is collected, labelled, and sent to the lab.",
     tag: "Home · Office · Lab",
     bgColor: "#fff5f5",
     image: phoneMockup3,
@@ -83,6 +83,10 @@ const HowItWorks = () => {
       const cards = cardsRef.current.filter(Boolean);
       if (!cards.length) return;
 
+      // Stacking animation on tablet/desktop only; phones get a plain list
+      const mm = gsap.matchMedia();
+      mm.add("(min-width: 768px)", () => {
+
       // Ensure cards 1-5 start off-screen
       cards.forEach((card, index) => {
         if (index !== 0) {
@@ -94,7 +98,7 @@ const HowItWorks = () => {
         scrollTrigger: {
           trigger: cardContainerRef.current, // Target the cards directly, not the whole section
           start: "top 20%", // Let it scroll up until it sits nicely near the top of the viewport
-          end: `+=${cards.length * 150}%`, // Longer scroll distance for maximum smoothness
+          end: `+=${cards.length * 70}%`, // Enough scroll to read each card without feeling stuck
           pin: true,
           scrub: 1, // Fluid follow-through effect on the scrollbar
         },
@@ -138,12 +142,13 @@ const HowItWorks = () => {
         // Another reading pause after the card locks into place
         tl.to({}, { duration: 1.5 });
       });
+      });
     },
     { scope: sectionRef },
   );
 
   return (
-    <div ref={sectionRef} className="w-full bg-white relative pb-32">
+    <div ref={sectionRef} id="how-it-works" className="w-full bg-white relative pb-32">
       {/* Scrollable Header Section (Doesn't Pin) */}
       <div className="w-full px-6 pt-24 mb-16 relative z-10">
         <div className="text-center max-w-3xl mx-auto">
@@ -153,14 +158,12 @@ const HowItWorks = () => {
               HOW IT WORKS
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-[44px] font-bold text-gray-900 leading-[1.2]">
-            From your first message to your final result — six steps, all on
-            WhatsApp.
+          <h2 className="text-2xl md:text-[28px] font-bold text-gray-900 leading-[1.2]">
+            Six simple steps. All on WhatsApp.
           </h2>
-          <p className="text-gray-500 mt-6 text-lg max-w-2xl mx-auto">
-            Every iGENE patient goes through the same journey. The only thing
-            that changes is the test — because every person's concern is
-            different.
+          <p className="text-gray-500 mt-4 text-base max-w-2xl mx-auto">
+            From your first message to your personal health report — here's
+            exactly what happens.
           </p>
         </div>
       </div>
@@ -168,7 +171,7 @@ const HowItWorks = () => {
       {/* The Pinning Card Container */}
       <div
         ref={cardContainerRef}
-        className="relative w-full max-w-275 mx-auto px-6 h-105"
+        className="relative w-full max-w-275 mx-auto px-6 md:h-105 space-y-5 md:space-y-0"
       >
         {steps.map((step, index) => (
           <div
@@ -179,8 +182,8 @@ const HowItWorks = () => {
             className={`${
               index === 0
                 ? "relative"
-                : "absolute top-0 left-6 right-6 w-[calc(100%-3rem)]"
-            } rounded-4xl p-8 md:p-14 shadow-lg border border-black/5 grid grid-cols-1 md:grid-cols-2 gap-12 items-center will-change-transform origin-top h-full`}
+                : "relative md:absolute md:top-0 md:left-6 md:right-6 md:w-[calc(100%-3rem)]"
+            } rounded-4xl p-7 md:p-14 shadow-lg border border-black/5 grid grid-cols-1 md:grid-cols-2 gap-12 items-center will-change-transform origin-top md:h-full`}
             style={{
               backgroundColor: step.bgColor,
               zIndex: index + 10,
@@ -188,10 +191,13 @@ const HowItWorks = () => {
           >
             {/* Left Side: Text Content */}
             <div className="flex flex-col justify-center h-full">
-              <h3 className="text-3xl md:text-4xl font-bold text-[#111827] mb-6 tracking-tight">
+              <span className="text-[#912996] font-bold text-xs tracking-widest uppercase mb-3">
+                Step {step.id} of {steps.length}
+              </span>
+              <h3 className="text-2xl md:text-4xl font-bold text-[#111827] mb-4 md:mb-6 tracking-tight">
                 {step.title}
               </h3>
-              <p className="text-[#4B5563] text-lg md:text-[19px] leading-relaxed mb-8">
+              <p className="text-[#4B5563] text-base md:text-[19px] leading-relaxed mb-6 md:mb-8">
                 {step.description}
               </p>
               <p className="text-[#06b6d4] font-medium tracking-wide text-[15px]">
@@ -201,7 +207,16 @@ const HowItWorks = () => {
 
             {/* Right Side: Visual/Mockup Placeholder */}
             <div className="hidden relative md:flex justify-center items-center h-full">
-              <img src={step.image} alt={`${step.title} phone mockup`} />
+              {/* Mockups are hidden on phones, so only download them on wider screens */}
+              <picture>
+                <source media="(min-width: 768px)" srcSet={step.image} />
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  alt={`${step.title} phone mockup`}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
           </div>
         ))}

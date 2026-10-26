@@ -81,14 +81,6 @@ const QuestionSection = () => {
             Do any of these sound familiar?
           </span>
         </div>
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
-          These are the questions iGENE was built to answer.
-        </h2>
-        <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-          You do not need to understand genetics to use iGENE. You just need a
-          health concern, something you have been wondering about, worrying
-          about, or living with. iGENE takes it from there.
-        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-5">

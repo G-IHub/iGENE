@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-gray-900  mx-auto leading-tight mb-4 md:mb-6 px-2">
           Whatever health concern is
-          <br className="hidden sm:block" /> keeping you up at night
+          <br className="hidden sm:block" /> keeping you up at night{" "}
           <br className="hidden sm:block" />
           <span className="text-[#767676] font-medium">
             iGENE has the answers.
@@ -32,29 +32,12 @@ const Hero = () => {
         </p>
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 md:gap-4 mb-6 w-full sm:w-auto px-4">
           <a href="https://app.zikorail.com/go/genomac-labs-genetic-test" target="_blank" className="bg-[#B241B7] hover:bg-[#a34abc] text-white px-6 py-3 md:py-3.5 rounded-full text-sm font-medium flex items-center justify-center gap-2 transition-colors w-full sm:w-auto shadow-md shadow-purple-500/20">
-            Set up your business
+            Chat with iGENE on WhatsApp
             <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
               <path d="M24 12l-9-8v6H0v4h15v6z" />
             </svg>
           </a>
-          <a href="https://app.zikorail.com/go/genomac-labs-genetic-test" target="_blank" className="bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 px-6 py-3 md:py-3.5 rounded-full text-sm font-medium flex items-center justify-center gap-2 transition-colors shadow-sm w-full sm:w-auto">
-            Request a demo
-            <svg
-              className="w-4 h-4 text-gray-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </a>
         </div>
-        <p className="text-xs md:text-sm text-[#B3B3B3]">
-          14-day free trial. Cancel anytime.
-        </p>
       </div>
     </main>
   );
