@@ -31,7 +31,7 @@ const Hero = () => {
           easy-to-understand language.
         </p>
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 md:gap-4 mb-6 w-full sm:w-auto px-4">
-          <a href="https://app.zikorail.com/go/genomac-labs-genetic-test" target="_blank" className="bg-[#B241B7] hover:bg-[#a34abc] text-white px-6 py-3 md:py-3.5 rounded-full text-sm font-medium flex items-center justify-center gap-2 transition-colors w-full sm:w-auto shadow-md shadow-purple-500/20">
+          <a href="https://app.zikorail.com/go/VLwFm2" target="_blank" className="bg-[#B241B7] hover:bg-[#a34abc] text-white px-6 py-3 md:py-3.5 rounded-full text-sm font-medium flex items-center justify-center gap-2 transition-colors w-full sm:w-auto shadow-md shadow-purple-500/20">
             Chat with iGENE on WhatsApp
             <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
               <path d="M24 12l-9-8v6H0v4h15v6z" />

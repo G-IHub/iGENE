@@ -22,7 +22,7 @@ const Navbar = () => {
             <a href="#faq" className="hover:text-gray-900 transition-colors">FAQ</a>
           </div>
           <div className="hidden md:block">
-            <a href="https://app.zikorail.com/go/genomac-labs-genetic-test" target='_blank' className="bg-[#B241B7] hover:bg-[#a03cb1] cursor-pointer text-white px-5 py-2 rounded-full text-sm font-medium flex items-center gap-2 transition-colors">
+            <a href="https://app.zikorail.com/go/VLwFm2" target='_blank' className="bg-[#B241B7] hover:bg-[#a03cb1] cursor-pointer text-white px-5 py-2 rounded-full text-sm font-medium flex items-center gap-2 transition-colors">
               Chat on WhatsApp
               <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M24 12l-9-8v6H0v4h15v6z" />
@@ -52,7 +52,7 @@ const Navbar = () => {
             <a href="#how-it-works" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-gray-600 hover:text-gray-900 px-2">How it works</a>
             <a href="#stories" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-gray-600 hover:text-gray-900 px-2">Stories</a>
             <a href="#faq" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-gray-600 hover:text-gray-900 px-2">FAQ</a>
-            <a href="https://app.zikorail.com/go/genomac-labs-genetic-test" target="_blank" className="bg-[#B241B7] hover:bg-[#a03cb1] text-white px-5 py-2 mt-2 rounded-full text-sm font-medium flex items-center justify-center gap-2 transition-colors w-full">
+            <a href="https://app.zikorail.com/go/VLwFm2" target="_blank" className="bg-[#B241B7] hover:bg-[#a03cb1] text-white px-5 py-2 mt-2 rounded-full text-sm font-medium flex items-center justify-center gap-2 transition-colors w-full">
               Chat on WhatsApp
               <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M24 12l-9-8v6H0v4h15v6z" />

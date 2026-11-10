@@ -43,7 +43,7 @@ const Footer = () => {
           FAQ
         </a>
         <a
-          href="https://app.zikorail.com/go/genomac-labs-genetic-test"
+          href="https://app.zikorail.com/go/VLwFm2"
           target="_blank"
           className="text-[#d1d0d5] hover:text-white font-medium text-[15px] transition-colors"
         >

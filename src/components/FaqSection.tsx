@@ -124,7 +124,7 @@ const FaqSection = () => {
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-center">
           <p className="text-[#5A5A5A]">Still have questions?</p>
           <a
-            href="https://app.zikorail.com/go/genomac-labs-genetic-test"
+            href="https://app.zikorail.com/go/VLwFm2"
             target="_blank"
             className="bg-[#B241B7] hover:bg-[#a34abc] text-white text-sm font-medium px-5 py-2.5 rounded-full transition-colors"
           >
