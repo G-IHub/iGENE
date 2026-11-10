@@ -14,7 +14,7 @@ const CtaSection = () => {
           Start with a free WhatsApp chat — no appointments, no jargon. Just
           your concern, and an AI that connects it to real answers.
         </p>
-        <a href="https://app.zikorail.com/go/genomac-labs-genetic-test" target="_blank" className="bg-[#B241B7] cursor-pointer hover:bg-[#a03cb1] text-white font-medium text-sm px-6 py-3 md:py-3.5 rounded-full transition-colors duration-300 shadow-md shadow-purple-500/20 flex items-center gap-2">
+        <a href="https://app.zikorail.com/go/VLwFm2" target="_blank" className="bg-[#B241B7] cursor-pointer hover:bg-[#a03cb1] text-white font-medium text-sm px-6 py-3 md:py-3.5 rounded-full transition-colors duration-300 shadow-md shadow-purple-500/20 flex items-center gap-2">
           Chat with iGENE on WhatsApp
           <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
             <path d="M24 12l-9-8v6H0v4h15v6z" />
